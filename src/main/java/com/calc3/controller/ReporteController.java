@@ -129,11 +129,9 @@ public class ReporteController {
 
 	//test
 	@RequestMapping("get")
-	public void test(@RequestBody Map<String,String> mpentrada) {
-		//ResponseEntity<?>
-		List<Reporte> lr3=reporter.findByIdtecnico(mpentrada.get("id").toString());	
-		System.out.println(lr3);
-		//return ResponseEntity.status(HttpStatus.OK).body(mpentrada);
+	public String test(@RequestBody Map<String,String> mpentrada) {
+		
+		return "hola desde calculadora";
 	}	
 
 
